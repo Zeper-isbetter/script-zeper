@@ -135,6 +135,7 @@ local Button = SurvivalTab:CreateButton({
 local Button = SurvivalTab:CreateButton({
    Name = "99 Night In The Forest (Soluna)",
    Callback = function()
+      script_key="SolunaIsLove"
    loadstring(game:HttpGet("https://soluna-script.vercel.app/99-Nights-in-the-Forest.lua",true))()
    Rayfield:Destroy()
    end,
@@ -148,7 +149,15 @@ local Button = SurvivalTab:CreateButton({
    end,
 })
 
+local Divider = SurvivalTab:CreateDivider()
 
+local Button = SurvivalTab:CreateButton({
+   Name = "Build A Boat",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/102KIRA/Best-Babft-script/refs/heads/main/Actually%20Best%20babft%20script"))()
+   Rayfield:Destroy()
+   end,
+})
  
 local UniversalTab = Window:CreateTab("💪 Universal", nil) -- Title, Image
 local UniversalSection = UniversalTab:CreateSection("Infinity Field")
@@ -170,10 +179,10 @@ local Button = UniversalTab:CreateButton({
 })
 
 local KeyTab = Window:CreateTab("🔑 Key", nil) -- Title, Image
-local KeySection = KeyTab:CreateSection("99 Night...")
+local KeySection = KeyTab:CreateSection("99 Night In The Forest")
  
 local Button = KeyTab:CreateButton({
-   Name = "SolunaIsLove (Soluna)",
+   Name = "EndOverdosing (Soluna)",
    Callback = function()
  
    end,
