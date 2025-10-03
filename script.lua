@@ -39,9 +39,19 @@ local Window = Rayfield:CreateWindow({
  
  
 local HomeTab = Window:CreateTab("🏠 Home", nil) -- Title, Image
-local HomeSection = HomeTab:CreateSection("🏠 Welcome Home 🏠")
- 
- 
+local HomeSection = HomeTab:CreateSection("🤝Social Media🤝")
+
+local HomeLabel = HomeTab:CreateLabel("Youtube = @noobking10 ", "rewind")
+
+local HomeSection = HomeTab:CreateSection("😎Update Area😎")
+
+local HomeParagraph = HomeTab:CreateParagraph({Title = "Update 1", Content = "+ Adding 2 new game script    + Upgrade home tab"})
+
+
+local HomeSection = HomeTab:CreateSection("( •̀ ω •́ )✧ (Credits)")
+
+local HomeLabel = HomeTab:CreateLabel("Now is emty but new uptade added here ", "rewind")
+
 Rayfield:Notify({
    Title = "Thank you the using this loader",
    Content = "By NoobKing",
@@ -150,6 +160,8 @@ local Button = SurvivalTab:CreateButton({
 })
 
 local Divider = SurvivalTab:CreateDivider()
+
+local SurvivalSection = SurvivalTab:CreateSection("Build A boat")
 
 local Button = SurvivalTab:CreateButton({
    Name = "Build A Boat",
