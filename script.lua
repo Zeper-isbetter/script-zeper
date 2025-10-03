@@ -143,15 +143,6 @@ local Button = SurvivalTab:CreateButton({
 })
  
 local Button = SurvivalTab:CreateButton({
-   Name = "99 Night In The Forest (Soluna)",
-   Callback = function()
-      script_key="SolunaIsLove"
-   loadstring(game:HttpGet("https://soluna-script.vercel.app/99-Nights-in-the-Forest.lua",true))()
-   Rayfield:Destroy()
-   end,
-})
- 
-local Button = SurvivalTab:CreateButton({
    Name = "99 Night In The Forest (Nazoru.xyz)",
    Callback = function()
    loadstring(game:HttpGet('https://nazuro.xyz/99nights'))()
@@ -191,20 +182,14 @@ local Button = UniversalTab:CreateButton({
 })
 
 local KeyTab = Window:CreateTab("🔑 Key", nil) -- Title, Image
-local KeySection = KeyTab:CreateSection("99 Night In The Forest")
  
-local Button = KeyTab:CreateButton({
-   Name = "EndOverdosing (Soluna)",
-   Callback = function()
- 
-   end,
-})
+local HomeLabel = HomeTab:CreateLabel("Emty but next update is coming but i dont think ", "rewind")
 
 local MiscTab = Window:CreateTab("🎚️ Misc", nil) -- Title, Image
 local MiscSection = MiscTab:CreateSection("BrookHaven")
 
 local Button = MiscTab:CreateButton({
-   Name = "Brookhaven ()",
+   Name = "Brookhaven (RedZ)",
    Callback = function()
    loadstring(game:HttpGet("https://pastefy.app/9OoVFBCU/raw"))()
 	Rayfield:Destroy()
