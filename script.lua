@@ -48,9 +48,19 @@ local HomeSection = HomeTab:CreateSection("😎Update Area😎")
 local HomeParagraph = HomeTab:CreateParagraph({Title = "Update 1", Content = "+ Adding 2 new game script    + Upgrade home tab"})
 
 
-local HomeSection = HomeTab:CreateSection("( •̀ ω •́ )✧ (Credits)")
+local HomeSection = HomeTab:CreateSection("Credits")
 
 local HomeLabel = HomeTab:CreateLabel("Now is emty but new uptade added here ", "rewind")
+
+local HomeSection = HomeTab:CreateSection("( •̀ ω •́ )✧")
+
+local Button = HomeTab:CreateButton({
+   Name = "Soluna Loader",
+   Callback = function()
+   loadstring(game:HttpGet("https://soluna-script.vercel.app/main.lua",true))()
+   Rayfield:Destroy()
+   end,
+})
 
 Rayfield:Notify({
    Title = "Thank you the using this loader",
@@ -106,6 +116,18 @@ local FightSection = FightTab:CreateSection("Evade")
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/thesigmacorex/RobloxScripts/main/speedhax"))()
 
+   Rayfield:Destroy()
+   end,
+})
+
+local Divider = FightTab:CreateDivider()
+
+local FightSection = FightTab:CreateSection("Arsenal")
+
+local Button = FightTab:CreateButton({
+   Name = "Arsenal(Soluna)",
+   Callback = function()
+   loadstring(game:HttpGet("https://soluna-script.vercel.app/arsenal.lua", true))()
    Rayfield:Destroy()
    end,
 })
