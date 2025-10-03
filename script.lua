@@ -205,7 +205,7 @@ local Button = UniversalTab:CreateButton({
 
 local KeyTab = Window:CreateTab("🔑 Key", nil) -- Title, Image
  
-local HomeLabel = HomeTab:CreateLabel("Emty but next update is coming but i dont think ", "rewind")
+local KeyLabel = KeyTab:CreateLabel("Emty but next update is coming but i dont think ", "rewind")
 
 local MiscTab = Window:CreateTab("🎚️ Misc", nil) -- Title, Image
 local MiscSection = MiscTab:CreateSection("BrookHaven")
