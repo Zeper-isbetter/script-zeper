@@ -1,12 +1,12 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
  
 local Window = Rayfield:CreateWindow({
-   Name = "Zeper🗡️ Loader | NoobKing Hub",
+   Name = "Zeper🗡️ Loader | V 0.0.1",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "All Scripts Loading",
+   LoadingTitle = "Loading...",
    LoadingSubtitle = "by NoobKing Gamers",
-   ShowText = "Thank you the use this scripts", -- Thank you the use this script
-   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   ShowText = "Update Is Coming...", -- Thank you the use this script
+   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
  
    ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
  
@@ -45,7 +45,7 @@ local HomeLabel = HomeTab:CreateLabel("Youtube = @noobking10 ", "rewind")
 
 local HomeSection = HomeTab:CreateSection("😎Update Area😎")
 
-local HomeParagraph = HomeTab:CreateParagraph({Title = "Update 1", Content = "+ Adding 2 new game script    + Upgrade home tab"})
+local HomeParagraph = HomeTab:CreateParagraph({Title = "Update 1", Content = "+ Adding 2 new game script        + Everthing is updated         + Upgrade home tab"})
 
 
 local HomeSection = HomeTab:CreateSection("Credits")
@@ -63,26 +63,12 @@ local Button = HomeTab:CreateButton({
 })
 
 Rayfield:Notify({
-   Title = "Thank you the using this loader",
+   Title = "Updated (V0.0.1)",
    Content = "By NoobKing",
    Duration = 10,
    Image = nil,
 })
- 
-Rayfield:Notify({
-   Title = "Every Weekday İs Updated",
-   Content = "By NoobKing",
-   Duration = 10,
-   Image = nil,
-})
- 
-Rayfield:Notify({
-   Title = "All Script Working Nice",
-   Content = "By NoobKing",
-   Duration = 10,
-   Image = nil,
-})
- 
+
 local FightTab = Window:CreateTab("🗡️ Fight", nil) -- Title, Image
 local FightSection = FightTab:CreateSection("Blade Ball Scripts")
  
@@ -176,10 +162,20 @@ local Divider = SurvivalTab:CreateDivider()
 
 local SurvivalSection = SurvivalTab:CreateSection("Build A boat")
 
+local Label = SurvivalTab:CreateLabel("if you want gold and gold block use 2st one", "rewind")
+
 local Button = SurvivalTab:CreateButton({
    Name = "Build A Boat",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/102KIRA/Best-Babft-script/refs/heads/main/Actually%20Best%20babft%20script"))()
+   Rayfield:Destroy()
+   end,
+})
+
+local Button = SurvivalTab:CreateButton({
+   Name = "Auto Gold Farm",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/DoliScriptz/Frostware/refs/heads/main/BABFT.lua",true))()
    Rayfield:Destroy()
    end,
 })
