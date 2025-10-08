@@ -139,6 +139,15 @@ local Button = FightTab:CreateButton({
    end,
 })
 
+local Button = FightTab:CreateButton({
+   Name = "OP TSB Script(Phantasm)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Games/TSB.lua"))()
+   Rayfield:Destroy()
+   end,
+})
+
+
 local SurvivalTab = Window:CreateTab("👌 Survival", nil) -- Title, Image
 local SurvivalSection = SurvivalTab:CreateSection("99 Night In The Forest Scripts")
  
