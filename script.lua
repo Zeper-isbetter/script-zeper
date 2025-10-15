@@ -98,9 +98,9 @@ local Divider = FightTab:CreateDivider()
 local FightSection = FightTab:CreateSection("Steal A Brainrot")
 
 local Button = FightTab:CreateButton({
-   Name = "Steal A Brainrot (ZZZ)",
+   Name = "Steal A Brainrot (private)",
    Callback = function()
-   loadstring(game:HttpGet("https://pastefy.app/DHyT4Zoi/raw"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/yoursvexyyy/VEX-OP/refs/heads/main/free%20server%20finder"))()
    Rayfield:Destroy()
    end,
 })
