@@ -1,11 +1,11 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
  
 local Window = Rayfield:CreateWindow({
-   Name = "Zeper🗡️ Loader | V 0.0.1",
+   Name = "Zeper🗡️ Loader | V 1.0.0",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Loading...",
-   LoadingSubtitle = "by NoobKing Gamers",
-   ShowText = "Update Is Coming...", -- Thank you the use this script
+   LoadingSubtitle = "by Superless Noob",
+   ShowText = "Update is every weekends", -- Thank you the use this script
    Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
  
    ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
@@ -45,12 +45,7 @@ local HomeLabel = HomeTab:CreateLabel("Youtube = @noobking10 ", "rewind")
 
 local HomeSection = HomeTab:CreateSection("😎Update Area😎")
 
-local HomeParagraph = HomeTab:CreateParagraph({Title = "Update 1", Content = "+ Adding 2 new game script        + Everthing is updated         + Upgrade home tab"})
-
-
-local HomeSection = HomeTab:CreateSection("Credits")
-
-local HomeLabel = HomeTab:CreateLabel("Now is emty but new uptade added here ", "rewind")
+local HomeParagraph = HomeTab:CreateParagraph({Title = "Update 2", Content = "+ added 99 ni... script        + Added TSB script         + delete credits tab"})
 
 local HomeSection = HomeTab:CreateSection("( •̀ ω •́ )✧")
 
@@ -175,6 +170,14 @@ local Button = SurvivalTab:CreateButton({
    Name = "99 Night In The Forest (Nazoru.xyz)",
    Callback = function()
    loadstring(game:HttpGet('https://nazuro.xyz/99nights'))()
+   Rayfield:Destroy()
+   end,
+})
+
+local Button = SurvivalTab:CreateButton({
+   Name = "(NEW)99 Night In The Forest (Gec)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/GEC0/gec/refs/heads/main/Gec.Loader", true))()
    Rayfield:Destroy()
    end,
 })
