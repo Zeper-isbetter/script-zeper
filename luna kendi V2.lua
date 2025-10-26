@@ -153,6 +153,14 @@ local Button = SurvivalTab:CreateButton({
    end,
 })
 
+local Button = SurvivalTab:CreateButton({
+   Name = "(NEW)99 Night In The Forest (Gec)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/GEC0/gec/refs/heads/main/Gec.Loader", true))()
+   Luna:Destroy()
+   end,
+})
+
 SurvivalTab:CreateDivider()
 
 SurvivalTab:CreateSection("------ Build - A - Boat - For - Treasure ------")
