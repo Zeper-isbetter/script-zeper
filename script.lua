@@ -156,6 +156,19 @@ local Button = FightTab:CreateButton({
 
 
 local SurvivalTab = Window:CreateTab("👌 Survival", nil) -- Title, Image
+
+local SurvivalSection = SurvivalTab:CreateSection("Ink Game Scripts")
+ 
+local Button = SurvivalTab:CreateButton({
+   Name = "Ink Game (VapeVoidware)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/inkgame.lua", true))()
+   Rayfield:Destroy()
+   end,
+})
+
+local Divider = SurvivalTab:CreateDivider()
+
 local SurvivalSection = SurvivalTab:CreateSection("99 Night In The Forest Scripts")
  
 local Button = SurvivalTab:CreateButton({
