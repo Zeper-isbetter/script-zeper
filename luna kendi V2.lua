@@ -131,6 +131,16 @@ local SurvivalTab = Window:CreateTab({
 	ShowTitle = true -- This will determine whether the big header text in the tab will show
 })
 
+SurvivalTab:CreateSection("------ Ink - Game ------")
+
+local Button = SurvivalTab:CreateButton({
+   Name = "Ink Game (VapeVoidware)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/inkgame.lua", true))()
+   Luna:Destroy()
+   end,
+})
+
 SurvivalTab:CreateDivider()
 
 SurvivalTab:CreateSection("------ 99 - Night - In - The - Forest ------")
